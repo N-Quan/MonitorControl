@@ -13,6 +13,9 @@ Install the following Python Packages:
 
 `pip install monitorcontrol`
 
+## Edit Configs
+Edit `config.txt` for your display setup
+
 ## Windows Instructions
 `launcher.bat`
 - Will launch and prompt user to set display brightness
