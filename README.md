@@ -1,5 +1,14 @@
 # MonitorControl
 
+Use your keyboard shortcuts to control multiple External Displays simultaneously.
+- Brightness
+    - Key combo triggers prompt, allowing the user to set the brightness.
+- Input Sources
+    - Key combo toggles between preset input sources
+
+This project uses the python `monitorcontrol` package to send DDC/CI commands to external displays.
+
+# Setup
 Install the following Python Packages:
 
 `pip install monitorcontrol`
