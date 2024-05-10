@@ -1,9 +1,20 @@
 @echo off
 setlocal
 
-rem Hardcoded maximum luminance values for each monitor
-set max_luminance_monitor0=100
-set max_luminance_monitor1=30
+REM Set the path to the configuration file
+set "config_file=..\config.txt"
+
+REM Check if the configuration file exists
+if not exist "%config_file%" (
+    echo Configuration file not found: %config_file%
+    exit /b 1
+)
+
+REM Read configurations from the file
+for /f "tokens=1,* delims==" %%a in (%config_file%) do (
+    if "%%a"=="max_luminance_monitor0" set /a max_luminance_monitor0=%%b
+    if "%%a"=="max_luminance_monitor1" set /a max_luminance_monitor1=%%b
+)
 
 rem Check if an argument is provided
 if "%~1"=="" (

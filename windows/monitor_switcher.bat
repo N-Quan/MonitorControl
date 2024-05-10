@@ -1,10 +1,22 @@
 @echo off
 setlocal
 
-set personal_monitor_0="HDMI1"
-set personal_monitor_1="DVI1"
-set work_monitor_0="DP1"
-set work_monitor_1="ANALOG1"
+REM Set the path to the configuration file
+set "config_file=..\config.txt"
+
+REM Check if the configuration file exists
+if not exist "%config_file%" (
+    echo Configuration file not found: %config_file%
+    exit /b 1
+)
+
+REM Read configurations from the file
+for /f "tokens=1,* delims==" %%a in (%config_file%) do (
+    if "%%a"=="personal_monitor_0" set personal_monitor_0=%%b
+    if "%%a"=="personal_monitor_1" set personal_monitor_1=%%b
+    if "%%a"=="work_monitor_0" set work_monitor_0=%%b
+    if "%%a"=="work_monitor_1" set work_monitor_1=%%b
+)
 
 REM Run monitorcontrol to get input source for monitor 0
 for /f "tokens=*" %%a in ('monitorcontrol --monitor 0 --get-input-source') do set input_source=%%a
