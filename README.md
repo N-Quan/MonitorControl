@@ -6,7 +6,8 @@ Use your keyboard shortcuts to control multiple External Displays simultaneously
 - Input Sources
     - Key combo toggles between preset input sources
 
-This project uses the python `monitorcontrol` package to send DDC/CI commands to external displays.
+This project uses the python `monitorcontrol` package (https://github.com/newAM/monitorcontrol) to send DDC-CI commands to external displays.
+- `v3.1.0` `monitorcontrol` source code stored as zip in root of this repo 
 
 # Setup
 Install the following Python Packages:
