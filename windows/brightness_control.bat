@@ -43,8 +43,8 @@ if %brightness_level% gtr 100 (
 )
 
 rem Calculate the adjustment factors for each monitor
-set /a "adjustment_factor_monitor0=100 / max_luminance_monitor0"
-set /a "adjustment_factor_monitor1=100 / max_luminance_monitor1"
+set /a "adjustment_factor_monitor0= 100/max_luminance_monitor0"
+set /a "adjustment_factor_monitor1= 100/max_luminance_monitor1"
 
 rem Apply the adjustment factors to the brightness level
 set /a "adjusted_brightness_level_monitor0=brightness_level * adjustment_factor_monitor0"

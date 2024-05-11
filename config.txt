@@ -1,4 +1,9 @@
 # Define max luminance of your monitors
+# Different monitors have different brightness capacities. These adjustments aim to keep multiple displays at the same perceived brightness.
+
+# max_luminance_monitor<int> = <system brightness>
+# Max physical brightness of monitor <int> should occur at <system brightness>
+
 max_luminance_monitor0=100
 max_luminance_monitor1=30
 
