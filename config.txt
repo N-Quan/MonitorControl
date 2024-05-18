@@ -5,7 +5,7 @@
 # Max physical brightness of monitor <int> should occur at <system brightness>
 
 max_luminance_monitor0=100
-max_luminance_monitor1=30
+max_luminance_monitor1=60
 
 # Monitor Input Profiles
 personal_monitor_0="HDMI1"
