@@ -53,5 +53,6 @@ Whenever you press that key combination the corresponding bat file will launch.
 
     - Finish: Complete the wizard and save the task.
 
+        ![alt text](TaskSchedulerAction.png)
 ## Linux Instructions
 tba
