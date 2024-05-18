@@ -1,0 +1,13 @@
+# Define max luminance of your monitors
+max_luminance:
+  monitor0: 100
+  monitor1: 30
+
+# Monitor Input Profiles
+monitor_input_profiles:
+  personal:
+    monitor_0: HDMI1
+    monitor_1: DVI1
+  work:
+    monitor_0: DP1
+    monitor_1: ANALOG1
